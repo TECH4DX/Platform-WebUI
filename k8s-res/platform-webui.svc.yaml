@@ -7,11 +7,9 @@ metadata:
 spec:
   ports:
   - port: 80
-    targetPort: 80
     nodePort: 80
+    targetPort: 80
     protocol: TCP
-  externalIPs: []
-  type: NodePort
-
   selector:
     app: platform-webui
+  type: NodePort

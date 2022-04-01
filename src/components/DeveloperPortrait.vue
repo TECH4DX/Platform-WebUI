@@ -148,8 +148,6 @@ import $ from "jquery";
 import ProcessBar from "./ProcessBar.vue";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://159.138.5.80:8080";
-
 let base = +new Date(2021, 12, 1);
 let oneDay = 24 * 3600 * 1000;
 let valueBase = Math.random() * 300;
