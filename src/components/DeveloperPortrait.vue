@@ -474,7 +474,7 @@ export default defineComponent({
       );
 
       axios.get("/api/es/IssueOpenDaysDistribution").then((response) => {
-        var Data = response["data"]["data"]["aggregations"]["2"]["buckets"];
+        var Data = response["data"]["data"];
         IssueOpenDaysDistribution.setOption({
           legend: {
             top: "2%",
