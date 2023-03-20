@@ -1,7 +1,7 @@
 FROM node:16.14.2 as build-stage
 WORKDIR /app
 COPY package.json package.json
-RUN npm install -g cnpm --registry=https://registry.npm.taobao.org && \
+RUN npm install -g cnpm@7.1.0 --registry=https://registry.npm.taobao.org && \
     cnpm install -g @vue/cli && \
     cnpm install
 COPY . .
